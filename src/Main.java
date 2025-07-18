@@ -1,6 +1,4 @@
-import arrays.ArrayBasics;
-import arrays.DoublyLinkedList;
-import arrays.SinglyLinkedList;
+import arrays.*;
 
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -85,7 +83,23 @@ public class Main {
         while (itr.hasPrevious()) {
             System.out.print(itr.previous() + " ");
         }
+        System.out.println("\n");
+        System.out.println("Sliding window of Fixed Size using arrays");
 
+        /*
+        * When the input is an array of integers (int[]),
+        * sliding window problems usually focus on array-based techniques like sums, averages,
+        * or counts using simple variables or primitive data structures (e.g., integers, queues).
+        * */
+
+        int[] nums = {1,3,2,6,4,5};
+        int k = 3;
+
+        SlidingWindowFixedSize.slidingWindowFS(nums,k);
+
+        System.out.println("\nMaximum Sum Subarray K");
+        int result = MaxSumSubarrayK.maxSum(nums, k);
+        System.out.println("Maximum sum of subarray of size " + k + " = " + result);
 
     }
 
