@@ -1,7 +1,10 @@
 import arrays.*;
+import stacks.StackArray;
+import stacks.StackLinkedList;
 
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -101,6 +104,54 @@ public class Main {
         int result = MaxSumSubarrayK.maxSum(nums, k);
         System.out.println("Maximum sum of subarray of size " + k + " = " + result);
 
+        // Test Stack using Array
+        System.out.println("\nTest Stack using Array");
+        StackArray arrayStack = new StackArray(5);
+        arrayStack.push(10);
+        arrayStack.push(20);
+        arrayStack.push(30);
+        arrayStack.printStack();  // Output: 30 20 10
+        arrayStack.pop();
+        arrayStack.printStack();  // Output: 20 10
+
+        System.out.println();
+
+        // Test Stack using Linked List
+        System.out.println("\nTest Stack using linkedlist");
+        StackLinkedList linkedListStack = new StackLinkedList();
+        linkedListStack.push(5);
+        linkedListStack.push(15);
+        linkedListStack.push(25);
+        linkedListStack.printStack();  // Output: 25 15 5
+        linkedListStack.pop();
+        linkedListStack.printStack();  // Output: 15 5
+
+        // Test Stack using Java built in
+        System.out.println("\nBuilt in Java stack");
+        Stack<Integer> stack = new Stack<>();
+        // Push elements
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println(stack);
+
+        // Peek top
+        System.out.println("Top element: " + stack.peek()); // 30
+
+        // Pop elements
+        System.out.println("Popped: " + stack.pop()); // 30
+        System.out.println("Popped: " + stack.pop()); // 20
+
+        System.out.println(stack);
+
+        // Check if empty
+        System.out.println("Is stack empty? " + stack.isEmpty()); // false
+
+        // Final stack state
+        System.out.println("Current stack: " + stack); // [10]
     }
+
+
 
 }
