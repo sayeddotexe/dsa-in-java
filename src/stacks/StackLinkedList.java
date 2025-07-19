@@ -46,4 +46,16 @@ public class StackLinkedList {
         }
         System.out.println();
     }
+
+    public static void main(String[] args){
+        // Test Stack using Linked List
+        System.out.println("\nTest Stack using linkedlist");
+        StackLinkedList linkedListStack = new StackLinkedList();
+        linkedListStack.push(5);
+        linkedListStack.push(15);
+        linkedListStack.push(25);
+        linkedListStack.printStack();  // Output: 25 15 5
+        linkedListStack.pop();
+        linkedListStack.printStack();  // Output: 15 5
+    }
 }

@@ -48,4 +48,16 @@ public class StackArray {
         }
         System.out.println();
     }
+
+    public static void main(String[] args){
+        // Test Stack using Array
+        System.out.println("\nTest Stack using Array");
+        StackArray arrayStack = new StackArray(5);
+        arrayStack.push(10);
+        arrayStack.push(20);
+        arrayStack.push(30);
+        arrayStack.printStack();  // Output: 30 20 10
+        arrayStack.pop();
+        arrayStack.printStack();  // Output: 20 10
+    }
 }

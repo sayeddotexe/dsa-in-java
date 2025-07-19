@@ -26,5 +26,25 @@ public class SlidingWindowFixedSize {
             windowSum += nums[i] - nums[i-k];
             System.out.println("Window [" + (i - k + 1) + " to " + i + "]: Sum = " + windowSum);
         }
+
+    }
+
+    public static void main(String[] args){
+        System.out.println("Sliding window of Fixed Size using arrays");
+
+        /*
+         * When the input is an array of integers (int[]),
+         * sliding window problems usually focus on array-based techniques like sums, averages,
+         * or counts using simple variables or primitive data structures (e.g., integers, queues).
+         * */
+
+        int[] nums = {1,3,2,6,4,5};
+        int k = 3;
+
+        SlidingWindowFixedSize.slidingWindowFS(nums,k);
+
+        System.out.println("\nMaximum Sum Subarray K");
+        int result = MaxSumSubarrayK.maxSum(nums, k);
+        System.out.println("Maximum sum of subarray of size " + k + " = " + result);
     }
 }
