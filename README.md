@@ -34,11 +34,11 @@ Each folder corresponds to a DSA topic and contains:
 | Topic          | Status      | Notes                             |
 |----------------|-------------|-----------------------------------|
 | Java Basics    | ✅ Complete | Data types, loops, OOP            |
-| Arrays         | ✅ Ongoing  | Basics, two-pointer, sliding window |
-| Linked Lists   | ✅ Ongoing  | Singly & Doubly, cycle detection  |
-| Stack          | 🔜 Planned  | Using array and linked list       |
-| Queue          | 🔜 Planned  | Linear and circular queues        |
-| Recursion      | 🔜 Planned  | Backtracking, DFS                 |
+| Arrays         | ✅ Complete  | Basics, two-pointer, sliding window |
+| Linked Lists   | ✅ Complete  | Singly & Doubly, cycle detection  |
+| Stack          | ✅ Complete  | Using array and linked list       |
+| Queue          | ✅ Complete  | Linear and circular queues        |
+| Recursion      | ✅ Ongoing  | Backtracking, DFS                 |
 | Sorting        | 🔜 Planned  | Merge sort, quick sort            |
 | Trees          | 🔜 Planned  | BST, traversals, height, balance  |
 | Graphs         | 🔜 Planned  | BFS, DFS, topological sort        |
