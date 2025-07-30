@@ -40,7 +40,7 @@ Each folder corresponds to a DSA topic and contains:
 | Queue          | ✅ Complete  | Linear and circular queues        |
 | Recursion      | ✅ Ongoing  | Backtracking, DFS                 |
 | Sorting        | 🔜 Planned  | Merge sort, quick sort            |
-| Trees          | 🔜 Planned  | BST, traversals, height, balance  |
+| Trees          | ✅ Complete  | BST, traversals, height, balance  |
 | Graphs         | 🔜 Planned  | BFS, DFS, topological sort        |
 | Dynamic Programming | 🔜 Planned | Memoization, tabulation       |
 
